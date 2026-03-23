@@ -84,6 +84,6 @@ annotation of tissue on which the tool interacts on
 # What is out of scope
 
 - complex terminology considerations (to avoid the risk that such discussion will delay consensus for using the standard and delay the standard's adoption)
-- frame annotations (annotate what is visible in a given video frame). Only relevant items for the surgery are of importance. A relevant related information is in Segmentation labels section at [https://www.cvschallenge.org/the-challenge-2](https://www.cvschallenge.org/the-challenge-2)
+- frame annotations (annotate what is visible in a given video frame). Only relevant items for the surgery are of importance. A relevant related information is in Segmentation section of the page at [https://www.cvschallenge.org/the-challenge-2](https://www.cvschallenge.org/the-challenge-2)
 - any anotation of surgical skill assesment
 
