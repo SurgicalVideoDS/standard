@@ -1,6 +1,6 @@
 # Surgical Video Data Standard
 
-https://SurgicalVideoDS.github.io/standard/
+[https://SurgicalVideoDS.github.io/standard](https://SurgicalVideoDS.github.io/standard)
 
-repo link: https://github.com/SurgicalVideoDS/standard
+repo link: [https://github.com/SurgicalVideoDS/standard](https://github.com/SurgicalVideoDS/standard)
 
