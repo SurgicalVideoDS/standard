@@ -1,0 +1,23 @@
+[
+    {
+        "start_time": "00:00:00.000",
+        "end_time": "00:01:07.000",
+        "annotation": {
+            "milestone": "Access"
+        }
+    },
+    {
+        "start_time": "00:01:07.000",
+        "end_time": "00:04:32.000",
+        "annotation": {
+            "milestone": "Execution of Surgical Objectives"
+        }
+    },
+    {
+        "start_time": "00:04:32.000",
+        "end_time": "00:23:13.000",
+        "annotation": {
+            "milestone": "Closure"
+        }
+    }
+]
