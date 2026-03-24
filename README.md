@@ -4,3 +4,4 @@
 
 repo link: [https://github.com/SurgicalVideoDS/standard](https://github.com/SurgicalVideoDS/standard)
 
+[https://surgicalvideods.github.io/standard/standard-definition](https://surgicalvideods.github.io/standard/standard-definition)
