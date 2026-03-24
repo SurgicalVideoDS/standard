@@ -52,11 +52,11 @@ To test implementation, standard is implemented using JSON and JSON schema. Othe
 *AWS team can further experiment with YAML, XML schema or other implementations*
 *For implementation format, also it is possible to be inspired how it is solved by HL7 FHIR*
 
-## Implementation phases
+## Implementation tiers
 
-The standard assumes a gradual icrease in complexity and a gradual implementation in phases. Note that term phase in implementation is distinct from phase defined above.
+The standard assumes a gradual icrease in complexity and a gradual implementation in tiers. 
 
-### PHASE 1:
+### Tier 1:
 
 milestones
 	1. access
@@ -67,11 +67,11 @@ action - cut, grasp, retract, suture, staple, cauterize, clip
 
 idle-ness in video
 
-### PHASE 2:
+### Tier 2:
 
 mechanism for defining and/or restricting the permissible values used in annotation
 
-### PHASE 3:
+### Tier 3:
 
 task boundaries  
 procedure basic metadata  
@@ -83,19 +83,19 @@ extended_phase
 - reconstruction
 - extraction
 
-### PHASE 4:
+### Tier 4:
 
 general anatomy (linked to action)
 
-### PHASE 5:
+### Tier 5:
 
 tool use (anotate which tool is used by surgeon)
 
-### PHASE 6:
+### Tier 6:
 
 type of surgery 
 
-### PHASE 7:
+### Tier 7:
 
 annotation of tissue on which the tool interacts on
 
@@ -103,5 +103,5 @@ annotation of tissue on which the tool interacts on
 
 - complex terminology considerations (to avoid the risk that such discussion will delay consensus for using the standard and delay the standard's adoption)
 - frame annotations (annotate what is visible in a given video frame). Only relevant items for the surgery are of importance. A relevant related information is in Segmentation labels section at [https://www.cvschallenge.org/the-challenge-2](https://www.cvschallenge.org/the-challenge-2)
-- any anotation of surgical skill assesment
+- detailed anotation of surgical skill assesment (stay at basic level initially)
 
