@@ -1,62 +1,64 @@
-[
-    {
-        "timestamp": "00:00:00.000", -- HH:mm:ss.SSS
-        "annotation": {
-            "milestone": "Access"
+{
+    "items": [
+        {
+            "start_time": "00:00:00.000",
+            "annotation": {
+                "milestone": "Access"
+            }
+        },
+        {
+            "start_time": "00:04:32.540",
+            "annotation": {
+                "milestone": "Execution of Surgical Objectives"
+            }
+        },
+        {
+            "start_time": "00:05:12.054",
+            "annotation": {
+                "action": "cut"
+            }
+        },
+        {
+            "start_time": "00:07:45.001",
+            "annotation": {
+                "action": "grasp"
+            }
+        },
+        {
+            "start_time": "00:09:20.876",
+            "annotation": {
+                "action": "retract"
+            }
+        },
+        {
+            "start_time": "00:12:08.888",
+            "annotation": {
+                "action": "suture"
+            }
+        },
+        {
+            "start_time": "00:14:33.808",
+            "annotation": {
+                "action": "staple"
+            }
+        },
+        {
+            "start_time": "00:16:41.255",
+            "annotation": {
+                "action": "cauterize"
+            }
+        },
+        {
+            "start_time": "00:17:10.878",
+            "annotation": {
+                "action": "clip"
+            }
+        },
+        {
+            "start_time": "00:23:13.554",
+            "annotation": {
+                "milestone": "Closure"
+            }
         }
-    },
-    {
-        "timestamp": "00:04:32.540",
-        "annotation": {
-            "milestone": "Execution of Surgical Objectives" -- milestone is a predefined value from the ontology
-        }
-    },
-    {
-        "timestamp": "00:05:12.054",
-        "annotation": {
-            "action": "cut"
-        }
-    },
-    {
-        "timestamp": "00:07:45.001",
-        "annotation": {
-            "action": "grasp"
-        }
-    },
-    {
-        "timestamp": "00:09:20.876",
-        "annotation": {
-            "action": "retract"
-        }
-    },
-    {
-        "timestamp": "00:12:08.888",
-        "annotation": {
-            "action": "suture"
-        }
-    },
-    {
-        "timestamp": "00:14:33.808",
-        "annotation": {
-            "action": "staple"
-        }
-    },
-    {
-        "timestamp": "00:16:41.255",
-        "annotation": {
-            "action": "cauterize"
-        }
-    },
-    {
-        "timestamp": "00:17:10.878",
-        "annotation": {
-            "action": "clip"
-        }
-    },
-    {
-        "timestamp": "00:23:13.554",
-        "annotation": {
-            "milestone": "Closure"
-        }
-    }
-]
+    ]
+}

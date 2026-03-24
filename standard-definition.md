@@ -3,7 +3,8 @@
 
 # Change log
 
-- Mar 19, 2026: initial version (for collaborators; e.g., AWS team) *italic font indicates content to be expanded later or comments to colaborators*
+- Mar 19, 2026: v0.9.0: initial version (for collaborators; e.g., AWS team) *italic font indicates content to be expanded later or comments to colaborators*
+- March 24, 2026: v0.9.1: phases elaboration, terms elaboration, schema description expanded
 
 # Introduction
 
@@ -14,6 +15,8 @@ Video annotation standard in the field of Robotic Assisted Surgery (RAS) aims to
 This section defines the semantic levels used to describe surgical activity. 
 
 A **Phase** is a high-level, temporally contiguous segment describing the overall stage of operative progression (macro workflow). Phases are designed to be broadly applicable and interpretable.
+
+An **Extended phase** is extension of the phase to describe the phase of execution of surgical objectives. Relevevant priro work is Mlambo, at al. 2025.
 
 A **Step** is a procedure-specific milestone required to complete a given operation (e.g., identify cystic duct in laparoscopic cholecystectomy). 
 
@@ -35,7 +38,8 @@ Surgical procedures can be understood as a compositional process like assembling
 ## General principles
 
 Timestamp is a key organizing principle for annotation. At least one timestamp is required (start_time). If an interval is annotated, the end_time is also included.
-Annotations
+
+Subsumption of annotation to belong under some larger annotation is established by temporal subsumption of the interval. E.g., using approximate times, if task is defined from minute 21 to minute 28, any steps annotated within this range are assumed to be associated with that task. (e.g., in minute 25).
 
 ## Description
 
@@ -52,38 +56,52 @@ To test implementation, standard is implemented using JSON and JSON schema. Othe
 
 The standard assumes a gradual icrease in complexity and a gradual implementation in phases. Note that term phase in implementation is distinct from phase defined above.
 
-PHASE 1:
+### PHASE 1:
+
 milestones
 	1. access
-	2. surgical objectives
+	2. execution of surgical objectives
 	3. closure
 
 action - cut, grasp, retract, suture, staple, cauterize, clip
 
 idle-ness in video
 
-PHASE 2:
+### PHASE 2:
+
 mechanism for defining and/or restricting the permissible values used in annotation
 
-PHASE 3:
-task boundaries
-procedure basic metadata
+### PHASE 3:
 
-PHASE 4:
+task boundaries  
+procedure basic metadata  
+extended_phase
+
+- exposure
+- dissection
+- transection
+- reconstruction
+- extraction
+
+### PHASE 4:
+
 general anatomy (linked to action)
 
-PHASE 5:
+### PHASE 5:
+
 tool use (anotate which tool is used by surgeon)
 
-PHASE 6:
+### PHASE 6:
+
 type of surgery 
 
-PHASE 7:
+### PHASE 7:
+
 annotation of tissue on which the tool interacts on
 
 # What is out of scope
 
 - complex terminology considerations (to avoid the risk that such discussion will delay consensus for using the standard and delay the standard's adoption)
-- frame annotations (annotate what is visible in a given video frame). Only relevant items for the surgery are of importance. A relevant related information is in Segmentation section of the page at [https://www.cvschallenge.org/the-challenge-2](https://www.cvschallenge.org/the-challenge-2)
+- frame annotations (annotate what is visible in a given video frame). Only relevant items for the surgery are of importance. A relevant related information is in Segmentation labels section at [https://www.cvschallenge.org/the-challenge-2](https://www.cvschallenge.org/the-challenge-2)
 - any anotation of surgical skill assesment
 
